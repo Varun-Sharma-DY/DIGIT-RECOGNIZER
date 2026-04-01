@@ -1,0 +1,93 @@
+Build a complete end-to-end soft computing project using a basic neural network for Customer Churn Prediction.
+
+Strict requirements:
+
+1. Tech Stack:
+
+* Python
+* TensorFlow/Keras for the neural network
+* Pandas & NumPy for preprocessing
+* Streamlit for UI dashboard
+
+2. Dataset:
+
+* Use a standard Telco Customer Churn dataset (or generate a synthetic dataset with similar columns if dataset is unavailable)
+* Include features like:
+
+  * tenure
+  * monthly charges
+  * total charges
+  * contract type
+  * internet service
+  * customer support calls
+  * payment method
+* Target variable: churn (0 or 1)
+
+3. Data Preprocessing:
+
+* Handle missing values
+* Encode categorical variables (Label Encoding / One-Hot)
+* Normalize numerical features
+* Split into training and testing sets
+
+4. Model:
+
+* Build a simple feedforward neural network:
+
+  * Input layer (based on features)
+  * 2 hidden layers (ReLU activation)
+  * Output layer (Sigmoid activation)
+* Compile with:
+
+  * optimizer = Adam
+  * loss = binary_crossentropy
+  * metrics = accuracy
+
+5. Training:
+
+* Train for 10–20 epochs
+* Display training accuracy and loss
+
+6. Evaluation:
+
+* Show accuracy on test data
+* Display confusion matrix
+* Show prediction probability for sample inputs
+
+7. Streamlit UI:
+
+* Create an interactive dashboard where user can:
+
+  * Input customer details
+  * Click "Predict"
+  * See:
+
+    * Churn probability
+    * Risk level (Low / Medium / High)
+* Add at least one chart:
+
+  * Feature importance (approximate)
+    OR
+  * Distribution of churn vs non-churn
+
+8. Code Structure:
+
+* Separate files:
+
+  * model.py (training)
+  * app.py (Streamlit UI)
+  * preprocess.py (data cleaning)
+* Ensure clean, readable, commented code
+
+9. Output:
+
+* Working Streamlit app
+* Saved trained model (.h5 or .keras)
+* Instructions to run locally
+
+10. Extra (important for presentation):
+
+* Add a small explanation section in the UI:
+  "This model uses a neural network to predict customer churn probability based on behavioral and billing data."
+
+Keep the implementation simple, efficient, and beginner-friendly. Avoid unnecessary complexity like deep architectures or external APIs.
